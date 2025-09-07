@@ -2,7 +2,7 @@ const express = require("express");
 // var express is a fn.
 
 const app = express();
-// var app is an object and there are a lot of methods of this app object. Exmpl: listen,get,post,use etc.
+// var app is an object and there are a lot of methods and properties for this app object. Exmpl: listen,get,post,use etc.
 
 let port = 3000;
 
@@ -34,6 +34,8 @@ app.get("/products", (req, res) => {
 app.get((req, res) => {
   res.send("This path doesnr exist.");
 });
+
+
 
 app.post("/", (req, res) => {
   res.send("You sent a post request.");
